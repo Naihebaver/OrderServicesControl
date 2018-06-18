@@ -1,0 +1,27 @@
+<% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
+<div class="container">
+
+ <%= form_tag("order_status", method: "post") do %>
+	<h3>Відстежте cвоє замовлення</h3>
+	<p>Даний сервіс допоможе Вам дізнатися, де зараз знаходиться Ваше відправлення</p><br/>
+	
+	<div class="field">
+		<%= label_tag 'Поштова служба:' %><br/>
+		<%=select_tag "people", "<option>Нова пошта</option>".html_safe, class: "btn btn-default dropdown-toggle category-field" %>
+	</div>
+ 	<div class="field">
+ 		<%= label_tag 'Номер накладної:' %><br/>
+    	<%= text_field_tag :code, "", class: 'form-control'%>
+    </div>
+    <div class="field">
+    	<%= label_tag 'Номер телефону (без +38):' %><br/>
+    	<%= text_field_tag :phone, "", class: 'form-control' %>
+    </div>
+    	<%= submit_tag "Знайти", class: "btn btn-danger" %>
+ <% end %>
+
+ </div>
+

@@ -1,0 +1,151 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "pages";
+@import "navbar";
+@import "footer";
+
+
+.main-page content{
+  padding: 0;
+}
+
+row.content {
+  height: 500px;
+  position: relative;
+
+}
+
+.container {
+  min-height: 84vh;
+}
+
+.content-text{
+  position: absolute;
+  padding: 17% 15%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+p.first{
+  font-size: 3em;
+}
+
+p.second{
+  font-size: 2em;
+}
+
+
+
+
+.content-text2 {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+
+  box-orient: horizontal;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  color: #ffffff;
+  text-align: center;
+
+  z-index: 1;
+  background-color: rgba(0,0,0,0.5);
+
+}
+
+.field_with_errors .message {
+  color: red;
+  display: flex;
+  margin-top: 5px;
+}
+
+.field {
+  margin: 10px 0;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+   margin:0;    
+}
+
+
+body {
+  background-color: rgba(189, 189, 189, 0.19);
+}
+
+.container {
+  padding: 50px 0;
+}
+
+
+a, a:link{
+  text-decoration : none;
+}
+
+
+.form-control {
+  width: 40%;
+}
+
+
+.btn-danger {
+  background: #d95552;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 10px 0px;
+  text-transform: uppercase;
+}
+
+.btn-danger:hover {
+  background: #d95552;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  outline: none;
+}
+
+.btn-danger:focus:active {
+  background: #d95552;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  outline: none;
+}
+
+.btn-default {
+  width: 40%;
+}
